@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: zingmini-turn
+    env: docker
+    plan: free
+    autoDeploy: true
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TURN_USERNAME
+        value: testuser
+      - key: TURN_PASSWORD
+        value: testpass
